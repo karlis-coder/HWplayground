@@ -46,7 +46,7 @@ var totalSum = qty * price
 print("new: \(qty) MacBook Pro with the price of: \(price) EUR, will cost you: \(totalSum) Eur")
 
 /*
- 
+  
  Ex4:
  Create String userInputAge and put value "33a" and convert to Int to make Fatal error: Unexpectedly found nil while unwrapping an Optional value!
  Fix this Fatal error inside the if-else statements to print whenever this age can be converted to Int or not!
@@ -87,11 +87,11 @@ var countQuarter = ""
 switch birthdayMonth {
 case 1...3:
     countQuarter = "first quarter"
-case 3...6:
+case 4...6:
     countQuarter = "second quarter"
-case 6...9:
+case 7...9:
     countQuarter = "third quarter"
-case 9...12:
+case 10...12:
     countQuarter = "fourth quarter"
 default:
     countQuarter = "Un-reborn again"
