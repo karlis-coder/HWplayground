@@ -14,11 +14,13 @@ import UIKit
  Girls against Washington Wizards scored - 107:122
  */
 
+//dictionary
 let myTeam = "Gurls"
 let results = [
     "Dallax Mags": ["99 : 44", "33 : 43"],
     "NY Gopknicks": ["94 : 34", "49 : 34"],
 ]
+//loop
 for (team, scores) in results {
     scores.forEach { score in
         print("\(myTeam) vs \(team) scored \(score)")

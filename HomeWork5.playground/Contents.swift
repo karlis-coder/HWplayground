@@ -50,22 +50,29 @@ Exercise 2
  6.Finally call myRectangle.description()
 */
 
-class Figure {
-    var height: Float
-    var width: Float
-    var radius: Float
-    var square: Float
-    var perimeter: Float
-    
-    init(height: String, width: Int) {
-        func squareOfFigure() -> Float { return square }
-        func perimeterOfFigure() -> Float { return perimeter }
-    }
-
-    
-    /* not done yet
-    class Rectangle: Figure {
-        override func squareOfFigure() -> Float -> Rectangle
+    class Figure {
+        var height: Float
+        var width: Float
+        var radius: Float?
+        var square: Float?
+        var perimeter: Float?
+        init(height: Float, width: Float) {
+            self.height = height
+            self.width = width
         }
-
-/*
+        func squareOfFigure() -> Float { return square! }
+            func perimeterOfFigure() -> Float { return perimeter! }
+        }
+    class Rectangle: Figure {
+        override func squareOfFigure() -> Float {
+            return height * width
+        }
+        override func perimeterOfFigure() -> Float {
+            return 2*(height + width)
+        }
+        func description() {
+            print("Rectangle area is: \(squareOfFigure()), and perimeter of Figure is: \(perimeterOfFigure())")
+    }
+    }
+    var myRectangle = Rectangle(height: 8, width: 6)
+    myRectangle.description()
