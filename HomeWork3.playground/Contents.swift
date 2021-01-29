@@ -25,15 +25,6 @@ for _ in 1...5{
  Use a % inside the for loop.
  */
 
-/*
-var arrayOfIntegers: [Int] = []
-arrayOfIntegers = [1,2,3,4,5,6]
-
-var evenNumber =
-
-print("My even numbers are: \(evenNumber)")
-*/
-
 let arrayOfInt: [Int] = [1,2,3,4,5,6,7,8,9]
 for evenNumber in arrayOfInt where evenNumber % 2 == 0{
 print("My even numbers are: \(evenNumber)")
@@ -46,7 +37,7 @@ print("My even numbers are: \(evenNumber)")
 
 let randomInt = Int.random(in: 1...10)
 var counter = 0
-for _ in 1...2000 {
+for _ in 1...10 {
     counter += 1
     if randomInt == 5 {
         break
