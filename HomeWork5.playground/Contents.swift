@@ -49,3 +49,23 @@ Exercise 2
  5.Make Class example from Rectangle Class and named it as myRectangle and give a value as you want for height and width.
  6.Finally call myRectangle.description()
 */
+
+class Figure {
+    var height: Float
+    var width: Float
+    var radius: Float
+    var square: Float
+    var perimeter: Float
+    
+    init(height: String, width: Int) {
+        func squareOfFigure() -> Float { return square }
+        func perimeterOfFigure() -> Float { return perimeter }
+    }
+
+    
+    /* not done yet
+    class Rectangle: Figure {
+        override func squareOfFigure() -> Float -> Rectangle
+        }
+
+/*
